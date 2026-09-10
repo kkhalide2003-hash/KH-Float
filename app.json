@@ -1,34 +1,27 @@
 {
   "expo": {
-    "name": "KH Float",
-    "slug": "kh-float",
+    "name": "KH Floating Hub",
+    "slug": "kh-floating-hub",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "kh-float",
-    "userInterfaceStyle": "dark",
+    "scheme": "kh-floating-hub",
+    "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": false
     },
     "android": {
+      "package": "com.khalidouassi.khfloatinghub",
       "permissions": ["SYSTEM_ALERT_WINDOW"],
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/icon.png",
-        "backgroundColor": "#0B0B0A"
-      },
-      "statusBar": {
-        "barStyle": "light-content",
-        "backgroundColor": "#0B0B0A"
-      },
-      "navigationBar": {
-        "barStyle": "light-content",
         "backgroundColor": "#0B0B0A"
       }
     },
     "web": {
       "favicon": "./assets/images/icon.png"
     },
-    "plugins": ["expo-router"],
+    "plugins": ["expo-router", "./plugins/withFloatingService"],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
