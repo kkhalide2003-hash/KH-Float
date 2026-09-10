@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "KH Float",
+    "slug": "kh-float",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "kh-float",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": false
+    },
+    "android": {
+      "permissions": ["SYSTEM_ALERT_WINDOW"],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#0B0B0A"
+      },
+      "statusBar": {
+        "barStyle": "light-content",
+        "backgroundColor": "#0B0B0A"
+      },
+      "navigationBar": {
+        "barStyle": "light-content",
+        "backgroundColor": "#0B0B0A"
+      }
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": ["expo-router"],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
