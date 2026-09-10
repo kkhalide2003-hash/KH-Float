@@ -6,10 +6,21 @@
 
 ```bash
 pnpm install
-pnpm run dev
+pnpm exec expo start
 ```
 
 يمكن تجربة التطبيق عبر Expo Go أو معاينة الهاتف في Replit.
+
+## إنشاء APK من GitHub Actions
+
+بعد رفع المشروع إلى GitHub:
+
+1. افتح تبويب **Actions**.
+2. اختر **Build KH Float APK**.
+3. اضغط **Run workflow**.
+4. بعد اكتمال البناء ستجد ملف APK في قسم **Artifacts**، وسيتم إنشاء GitHub Release تلقائيًا لهذا التشغيل اليدوي.
+
+الـ APK الناتج Release غير موقّع بمفتاح متجر Google Play، لكنه مناسب للتثبيت المباشر على جهاز أندرويد بعد السماح بالتثبيت من مصادر خارجية.
 
 ## المزايا
 
